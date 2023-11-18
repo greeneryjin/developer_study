@@ -43,6 +43,11 @@
     - Tree
     - Heap
     - 인접행렬 & 인접리스트
+
++ Algorithm
+    - BFS
+    - DFS
+    - Binary Search
       
 
 #### 2. Spring
