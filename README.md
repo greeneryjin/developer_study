@@ -37,27 +37,39 @@
     - Tree
     - Heap
     - 인접행렬 & 인접리스트
-
-  #### 2. Spring
-    - JPA
-    - Querydsl
-    - Spring MVC
-    - Spring Security
-    - 이론
-
-  #### 3. JAVA
-    - 8
-    - 11
-
-  #### 4. Git
-    - 명령어
       
-  #### 5. DB
-    - 명령어
 
-  #### 6. 웹서버
-    - Nginx
-    - apache
+#### 2. Spring
+  - JPA
+  - Querydsl
+  - Spring MVC
+  - Spring Security
+  - 이론
+      
+
+#### 3. JAVA
+  - 8
+  - 11
+      
+
+#### 4. Git
+  - 명령어
+      
+      
+#### 5. DB
+  - 명령어
+      
+
+#### 6. 웹서버
+  - Nginx
+  - apache
+
+
+#### 7. aws
+
+
+#### 8. 배포 종류
+
 
   
   
