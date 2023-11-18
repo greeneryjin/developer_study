@@ -9,6 +9,8 @@
   - index
   - lock
   - NoSQL & RDB
+ 
+    
 + Network
     - OSl 7계층
     - TCP & UDP
@@ -18,6 +20,8 @@
     - DNS
     - 세션 인증 & 토큰 인증
     - 쿠키 & 세션
+ 
+      
 + Operating System
     - 프로세스 & 스레드
     - 멀티 프로세스 & 멀티 스레드
@@ -30,6 +34,8 @@
     - 동시성 문제
     - 세마포어 & 뮤텍스
     - 페이징 & 세그먼테이션
+ 
+      
 + Data Structure
     - Array
     - List
