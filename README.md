@@ -4,12 +4,12 @@
 
 #### 1. CS
 + DB
-  - key
-  - Transaction
+  - [key](https://github.com/greeneryjin/developer_study/blob/main/DB/key.md)
+  - [Transaction](https://github.com/greeneryjin/developer_study/blob/main/DB/Transction.md)
   - index
   - lock
   - NoSQL & RDB
-  - 명령어
+  - [명령어](https://github.com/greeneryjin/developer_study/blob/main/DB/%EB%AA%85%EB%A0%B9%EC%96%B4.md)
  
     
 + Network
