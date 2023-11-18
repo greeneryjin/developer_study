@@ -57,35 +57,52 @@
   - Spring MVC
   - Spring Security
   - 이론
-  - 테스트 코드 작성
+  - 테스트 코드
+  - ControllerAdivce
     
 
 #### 3. JAVA
   - 8
   - 11
-      
+  - JVM
+  - Reflaction
 
 #### 4. Git
   - 명령어
       
 
 #### 5. 웹서버
-  - Nginx
-  - apache
-
+  - Nginx & Apache
+    
 
 #### 6. AWS
-
+  - aws ec2 유형
+  - RDS
+  - VPC
+  - ELB
+  - S3
+    
 
 #### 7. 배포 종류
+  - 롤링 & 블루/그린 & 카나리
+    
 
 #### 8. docker 
   - 명령어
+    
 
 #### 9. 프로메테우스 & 그라파나
 
+
 #### 10. 라이브러리
+  - Oauth2.0
+  - JWT
+  - Gradle
+  - Swagger
+  - ModelMapper
+  - Slf4j
 
 
-  
-  
+#### 11. 화면
+  - Session & Cookie & localStorage
+  - MPA & SPA & SSR & CSR & SSG
