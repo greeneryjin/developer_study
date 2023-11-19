@@ -2,6 +2,8 @@
 ----
 ### CS & 개발 & 배포 & 운영 정리
 
+혼자 공부하고 정리한 내용이라 잘못된 정보가 있을 수 있으니 이슈로 알려주세요 :)
+
 #### 1. CS
 + DB
   - [key](https://github.com/greeneryjin/developer_study/blob/main/DB/key.md)
