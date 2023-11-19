@@ -20,7 +20,6 @@
 + Network
     - OSl 7계층
     - TCP & UDP
-    - HTTP
     - TLS/SSL
     - CORS
     - DNS
@@ -62,8 +61,8 @@
   - Spring MVC
   - Spring Security
   - 이론
-  - 테스트 코드
   - ControllerAdivce
+  - Profile
     
 
 #### 3. JAVA
@@ -71,17 +70,19 @@
   - 11
   - JVM
   - Reflaction
+  - Garbage Collection
+  - String & StringBuilder & StringBuffer
 
 #### 4. Git
   - 명령어
-      
 
-#### 5. 웹서버
-  - Nginx & Apache
+#### 5. 테스트 코드
+  - Controller
+  - Repository
     
 
 #### 6. AWS
-  - aws ec2 유형
+  - Aws ec2 유형
   - RDS
   - VPC
   - ELB
@@ -108,6 +109,10 @@
   - Slf4j
 
 
-#### 11. 화면
+#### 11. Web
   - Session & Cookie & localStorage
   - MPA & SPA & SSR & CSR & SSG
+  - 웹서비 & WAS
+  - Nginx & Apache
+  - HTTP
+  - 브라우저 동작 방식
