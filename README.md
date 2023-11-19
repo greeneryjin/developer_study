@@ -22,7 +22,6 @@
     - TCP & UDP
     - TLS/SSL
     - CORS
-    - DNS
     - 세션 인증 & 토큰 인증
     - 쿠키 & 세션
  
