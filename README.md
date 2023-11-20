@@ -74,6 +74,8 @@
   - String & StringBuilder & StringBuffer
   - 람다
   - Stream
+  - maven
+  - lombok
 
 #### 4. Git
   - 명령어
