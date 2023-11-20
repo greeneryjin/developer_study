@@ -80,6 +80,7 @@
   - 제네릭
   - Oop
   - 객체지향
+  - [메모리구조](https://github.com/greeneryjin/developer_study/blob/main/Java/%EB%A9%94%EB%AA%A8%EB%A6%AC%EA%B5%AC%EC%A1%B0.md)
 
 #### 4. Git
   - 명령어
