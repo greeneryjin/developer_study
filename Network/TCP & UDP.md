@@ -24,7 +24,7 @@ TCP
 
     <br>
    
-  *4 way handshake - 연결 해제*
+  *4-way handshake - 연결 해제*
   
   (1) 클라이언트는 서버에게 연결을 종료한다는 FIN 플래그를 보낸다.
 
