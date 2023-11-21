@@ -1,16 +1,22 @@
 
 TCP
-: 데이터를 세그먼트라는 단위로 분할해서 전송하는 연결 지향형 프로토콜
+
+ + 데이터를 세그먼트라는 단위로 분할해서 전송하는 연결 지향형 프로토콜
+ + unreliable network에서, reliable network를 보장할 수 있도록 하는 프로토콜
+
+       reliable network를 보장한다는 것은 4가지 문제점 존재
+       손실 : packet이 손실될 수 있는 문제
+       순서 바뀜 : packet의 순서가 바뀌는 문제
+       Congestion : 네트워크가 혼잡한 문제
+       Overload : receiver가 overload 되는 문제
 
 특징
   
-  혼잡제어
+  + 흐름제어/혼잡제어
   
-  흐름제어
+  + 순서제어
   
-  순서제어
-  
-  오류제어
+  + 오류제어
   
   *3-way handshake - 연결 성립*
 
