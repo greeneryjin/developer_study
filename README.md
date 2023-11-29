@@ -128,6 +128,6 @@
   - 브라우저 동작 방식
 
 #### 12. Infra (Ubuntu 환경)
-  - (Mysql 설치)[]
+  - [Mysql 설치](https://github.com/greeneryjin/developer_study/blob/main/Infra/Mysql.md)
   - JAVA 설치
   - Docker 설치
