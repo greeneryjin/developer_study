@@ -126,3 +126,8 @@
   - Nginx & Apache
   - HTTP
   - 브라우저 동작 방식
+
+#### 12. Infra (Ubuntu 환경)
+  - (Mysql 설치)[]
+  - JAVA 설치
+  - Docker 설치
