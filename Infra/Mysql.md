@@ -56,17 +56,17 @@
 
 10. 권한 부여
 
-       //모든 DB에 모든 권한 부여
-       GRANT ALL PRIVILEGES ON *.* TO '계정아이디'@'호스트';
-       ex) grant all privileges on *.* to 'testId1'@'loalhost';
+        //모든 DB에 모든 권한 부여
+        GRANT ALL PRIVILEGES ON *.* TO '계정아이디'@'호스트';
+        ex) grant all privileges on *.* to 'testId1'@'loalhost';
 
-       //특정 DB에 모든 권한 부여
-       GRANT ALL PRIVILEGES ON 데이터베이스명.* TO '계정아이디'@'호스트';
-       ex) grant all privileges on board.* to 'testId1'@'loalhost';
+        //특정 DB에 모든 권한 부여
+        GRANT ALL PRIVILEGES ON 데이터베이스명.* TO '계정아이디'@'호스트';
+        ex) grant all privileges on board.* to 'testId1'@'loalhost';
 
-       //특정 DB에 특정 권한 부여
-       GRANT SELECT, INSERT, UPDATE ON 데이터베이스명.* TO '계정아이디'@'호스트';
-       ex) grant select, insert, update on board.* to 'testId1'@'loalhost';
+        //특정 DB에 특정 권한 부여
+        GRANT SELECT, INSERT, UPDATE ON 데이터베이스명.* TO '계정아이디'@'호스트';
+        ex) grant select, insert, update on board.* to 'testId1'@'loalhost';
 
 11. 권한 적용
 
