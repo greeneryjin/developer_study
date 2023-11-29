@@ -24,11 +24,15 @@
 
         show databases;
 
-7. 데이터 베이스 선택
+     데이터베이스 생성
+
+       CREATE DATABASE TEST;
+
+8. 데이터 베이스 선택
 
        USE mysql;
 
-8. 계정 확인
+9. 계정 확인
 
        SELECT User, Host, plugin FROM mysql.user;
 
@@ -50,7 +54,7 @@
      + %는 외부 ip에서도 접속할 수 있는 계정  
 
 
-9. 권한 부여
+10. 권한 부여
 
        //모든 DB에 모든 권한 부여
        GRANT ALL PRIVILEGES ON *.* TO '계정아이디'@'호스트';
@@ -64,11 +68,11 @@
        GRANT SELECT, INSERT, UPDATE ON 데이터베이스명.* TO '계정아이디'@'호스트';
        ex) grant select, insert, update on board.* to 'testId1'@'loalhost';
 
-10. 권한 적용
+11. 권한 적용
 
        FLUSH PRIVILEGES;
 
-11. 권한 부여 확인SSH는 네트워크 상 다른 컴퓨터의 쉘을 사용할 수 있게 해 주는 프로그램 혹은 그 프로토콜
+12. 권한 부여 확인SSH는 네트워크 상 다른 컴퓨터의 쉘을 사용할 수 있게 해 주는 프로그램 혹은 그 프로토콜
 
        SHOW GRANTS FOR '계정아이디'@'호스트';
 
@@ -103,12 +107,19 @@ dbeaver 연동 시 SSH 접속
        -> plush privileges;
        -> select user, host, plugin from user;
        -> mysql 종료
-       -> sudo systemctl restart mysql
-
+       -> sudo systemctl restart mysql;
 
 
 dbeaver 연동 시 Main 접속
 
+       ubuntu 내부 mysql을 화면으로 볼 수 있도록 환경 제공
 
 
+ssh key 충돌 해결 방법
+       
+       원인
+       : 기존에 접속하던 시스템의 변경 문제(시스템 재설치 혹은 교체)로 저장된 원격 시스템의 고유값이 기존에 저장된 값과 다를 때 발생
+
+       해결 방법
+       : /root/.ssh/known_hosts  파일에 들어가서 해당 ip로 저장된 키 값이 저장된 라인을 삭제한 후 재접속을 시도
 
