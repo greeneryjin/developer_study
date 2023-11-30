@@ -1,5 +1,5 @@
 
-TCP
+#### TCP
 
  + 데이터를 세그먼트라는 단위로 분할해서 전송하는 연결 지향형 프로토콜
  + unreliable network에서, reliable network를 보장할 수 있도록 하는 프로토콜
@@ -45,3 +45,20 @@ TCP
 + 서버는 ACK를 받은 이후 소켓을 닫는다 (Closed)
 
 + TIME_WAIT 시간이 끝나면 클라이언트도 닫는다 (Closed)
+
+<br>
+
+
+#### UDP
+
++ User Datagram Protocol의 약자로 데이터를 데이터그램 단위로 처리하는 프로토콜
++ 비연결형, 신뢰성 없는 전송 프로토콜
++ 데이터그램 단위로 쪼개면서 전송을 해야하기 때문에 전송 계층
++ Transport layer에서 사용하는 프로토콜
+
+
+특징
+
++ 데이터의 신속성으로 데이터의 처리가 TCP보다 빠름
++ 
+  
