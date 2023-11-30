@@ -121,7 +121,7 @@
 
 #### 11. Web
   - Session & Cookie & localStorage
-  - MPA & SPA & SSR & CSR & SSG
+  - [화면 랜더링]()
   - 웹서비 & WAS
   - Nginx & Apache
   - HTTP
