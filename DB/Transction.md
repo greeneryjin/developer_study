@@ -25,6 +25,10 @@ Rollback
 
 하나의 트랜잭션 처리가 비정상적으로 종료되어 트랜잭션 원자성이 깨진 경우
 
+
+delete는 rollback으로 복구가 가능, commit을 먼저할 경우는 안됨 
+truncate는 commit, rollback 적용이 안됨 
+
 ---- 
 
 ### DB 병행
