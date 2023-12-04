@@ -127,7 +127,7 @@
   - HTTP
   - 브라우저 동작 방식
 
-#### 12. Infra (환경 설치)
+#### 12. InfraSetting
   - [Mysql 설치](https://github.com/greeneryjin/developer_study/blob/main/Infra/Mysql.md)
   - JAVA 설치
   - Docker 설치
