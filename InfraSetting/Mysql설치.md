@@ -84,6 +84,11 @@
        DELETE FROM USER WHERE USER = '계정아이디';
        ex) delete from user where user = 'testId1';
 
+13. mysql 접속
+
+        mysql -u 계정명 -p
+
+
 window에서 Ubuntu 사용할 때 통신하는 방법
 
 putty, MobaXterm으로 SSH 통신을 사용해서 두 운영체제가 통신합니다.
