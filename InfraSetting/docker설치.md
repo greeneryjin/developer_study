@@ -37,7 +37,7 @@
 
         sudo systemctl status docker
       
-8. 일반 사용자 계정으로 docker 명령어 사용
+8. 일반 사용자 계정에서 슈퍼 유저 권한 부여(sudo 없이 사용 가능)
 
        sudo usermod -aG docker ${USER}
        id -nG
