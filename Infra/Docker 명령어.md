@@ -40,7 +40,7 @@ docker-compose로 컨테이너 종료
 모든 컨테이너 중지/삭제/이미지 삭제
 
     docker stop $(docker ps -a -p)
-    docker rm $(docker ps -ap)
+    docker rm $(docker ps -a -p)
     docker rmi $(docker images -q)
     sudo rm -rf: 호스트 명령으로 삭제하고 하위 폴더까지 포함    
 
