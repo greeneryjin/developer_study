@@ -7,6 +7,6 @@
 
     GRANT CONNECT, resource, dba TO 계정명;
 
-다른 사용자로 변경
+사용자로 변경
 
     CONNECT 계정/비밀번호; 
