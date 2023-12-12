@@ -70,7 +70,7 @@
 
 11. 권한 적용
 
-       FLUSH PRIVILEGES;
+        FLUSH PRIVILEGES;
 
 12. 권한 부여 확인SSH는 네트워크 상 다른 컴퓨터의 쉘을 사용할 수 있게 해 주는 프로그램 혹은 그 프로토콜
 
