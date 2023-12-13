@@ -48,22 +48,14 @@ e.printStackTrace();
 : 예외를 잡아서 처리하지 않으면 항상 throws에 던지는 예외를 선언해야 합니다.
 
 ```java
- /**
- * RuntimeException을 상속받은 예외는 언체크 예외가 된다.
- */
- static class MyUncheckedException extends RuntimeException {
-		 public MyUncheckedException(String message) {
-			 super(message);
-		 }
- }
-
-//체크 예외
+//체크 예외 - throw
 static class Repository {
 		 public void call() throw MyUncheckedException{
 			 throw new MyUncheckedException("ex");
 		 }
  }
 
+//체크 예외 - try ~ catch
 **static class Service {
 	 Repository repository = new Repository();
 
@@ -93,6 +85,16 @@ static class Repository {
 : 언체크 예외는 말 그대로 컴파일러가 예외를 체크하지 않는다는 뜻입니다. 
 
 ```java
+
+ /**
+ * 언체크 예외 - RuntimeException
+ */
+ static class MyUncheckedException extends   {
+		 public MyUncheckedException(String message) {
+			 super(message);
+		 }
+ }
+
 @Test
 void unchecked_catch() {
 		 Service service = new Service();
@@ -104,15 +106,6 @@ void unchecked_throw() {
 		Service service = new Service();
 		assertThatThrownBy(() -> service.callThrow()).isInstanceOf(MyUncheckedException.class);
 }
- 
-/**
- * RuntimeException을 상속받은 예외는 언체크 예외가 된다.
- */
- static class MyUncheckedException extends RuntimeException {
-		 public MyUncheckedException(String message) {
-			 super(message);
-		 }
- }
 
  /**
  * UnChecked 예외는
