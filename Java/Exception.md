@@ -34,12 +34,33 @@
 try { 
   //예외가 발생할 수 있는 실행문 		 
 } catch() {
-	//예외 처리문
+     //예외 처리문
+     e.printStackTrace(); : 클라이언트가 보는 예외가 아니라 서버 실행창에만 출력하는 에러 메세지
 }
 ```
+예외 처리 순서
+1. try 
+2. catch() 
 
-e.printStackTrace();
-: 클라이언트가 보는 예외가 아니라 서버 실행창에만 출력하는 에러 메세지
+```java
+try { 
+  //예외가 발생할 수 있는 실행문 		 
+} catch() {
+     //예외 처리문
+     e.printStackTrace(); : 클라이언트가 보는 예외가 아니라 서버 실행창에만 출력하는 에러 메세지
+} finally {
+
+}
+```
+예외 처리 순서
+1. try 
+2. catch()
+3. finally
+
+   + try{} or catch {} 안에 throw or return 있으면 return문 또는 throw문 전까지 로직 -> finally 실행 ->  return문 또는 throw문 실행
+ 
+  + catch {} or finally {}안에 있으면 finally문 안에 있는 throw문이 실행 -> catch문 안에 있는 throw문은 실행 안됨
+
 
 <br>
 
