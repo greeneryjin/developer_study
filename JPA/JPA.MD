@@ -66,6 +66,7 @@ JPA에서 객체를 관리하는 방법
 
 			
 			//데이터 검색
+//			DB 검색 전 영속성컨텍스트 확인 후 없으면 DB SELECT 조회, 있으면 영속성 객체 반환
 //			Dept one = em.find(Dept.class, 10);
 //			System.out.println(one.getLoc());	
 //			Emp two = em.find(Emp.class, 7369);
@@ -76,13 +77,14 @@ JPA에서 객체를 관리하는 방법
 //			persist호출 시 영속성 컨텍스트에 저장 
 //			em.persist(new Dept(1, "cloud engineer", "상암"));
 //			tx.commit();		
-//			commit 시 영속성 컨텍스트에서 flush()호출되고 영속성 컨텍스트의 내용을 DB와 동기화하고 COMMIOT실행
+//			commit 시 영속성 컨텍스트에서 자동으로 flush()호출되고 영속성 컨텍스트의 내용을 DB와 동기화하고 commit실행 
 			
-			//데이터 수정 
+			//데이터 수정  
 //			tx.begin();
 //			Dept one = em.find(Dept.class, 1);
 //			one.setLoc("한국");
 //			tx.commit();
+//			수정 시 영속성에 있던 객체를 스냅샷을 사용해서 상태를 저장하는데 자동으로 flush()를 통해 변경된 데이터와 변경전 데이터를 비교해서 수정하고 commit을 합니다. 
 //			System.out.println(one.getLoc());
 			
 			//데이터 삭제 
@@ -91,6 +93,28 @@ JPA에서 객체를 관리하는 방법
 			if(one != null) {
 				em.remove(one);				
 			}
+//			삭제 시 자동으로 flush호출 후 변경 내용을 DB와 동기한 후, commit을 진행합니다. 
 			tx.commit();
 ````
 
+#### JPA 메소드
+
+1. flush()
+
+: 영속성 컨텍스트의 내용을 DB에 반영합니다. 저장, 수정, 삭제에서 사용됩니다. 
+
+2. defach()
+
+: 특정 엔티티를 준영속 상태로 만듭니다. 
+
+3. clear()
+
+: 영속성 컨텍스트를 초기화합니다.
+
+4. close()
+
+: 영속성 컨텍스트를 종료합니다. 
+
+5. merge()
+
+: 준영속 상태의 엔티티로 
