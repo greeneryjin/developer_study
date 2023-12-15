@@ -73,14 +73,14 @@ JPA에서 객체를 관리하는 방법
 		
 			//데이터 저장 
 //			tx.begin();
+//			persist호출 시 영속성 컨텍스트에 저장 
 //			em.persist(new Dept(1, "cloud engineer", "상암"));
-//			em.persist(new Dept(2, "cloud engineer", "목동"));
-//			tx.commit();			
-			
+//			tx.commit();		
+//			commit 시 영속성 컨텍스트에서 flush()호출되고 영속성 컨텍스트의 내용을 DB와 동기화하고 COMMIOT실행
 			
 			//데이터 수정 
 //			tx.begin();
-//			Dept one = em.find(Dept.class, 10);
+//			Dept one = em.find(Dept.class, 1);
 //			one.setLoc("한국");
 //			tx.commit();
 //			System.out.println(one.getLoc());
