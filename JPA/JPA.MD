@@ -21,6 +21,7 @@ JPA 동작 과정
 
   JPA 내부에 Hibernate를 사용해서 JPA를 구현합니다.
 
+<br>
 
 #### Hibernate
 
@@ -30,8 +31,6 @@ JPA 동작 과정
 #### 영속성
 
 : 데이터를 생성한 프로그램이 종료되어도 사라지지 않는 데이터의 특성입니다. 
-
-<br>
 
 영속성 계층
   
@@ -60,6 +59,38 @@ JPA에서 객체를 관리하는 방법
 엔티티 CRUD
 
 ````JAVA 
-  
+  			//존재하는 테이블에 데이터 저장
+			em = DBUtil.getEntityManager();
+			//트랜잭션
+			EntityTransaction tx = em.getTransaction();
+
+			
+			//데이터 검색
+//			Dept one = em.find(Dept.class, 10);
+//			System.out.println(one.getLoc());	
+//			Emp two = em.find(Emp.class, 7369);
+//			System.out.println(two.getEname());
+		
+			//데이터 저장 
+//			tx.begin();
+//			em.persist(new Dept(1, "cloud engineer", "상암"));
+//			em.persist(new Dept(2, "cloud engineer", "목동"));
+//			tx.commit();			
+			
+			
+			//데이터 수정 
+//			tx.begin();
+//			Dept one = em.find(Dept.class, 10);
+//			one.setLoc("한국");
+//			tx.commit();
+//			System.out.println(one.getLoc());
+			
+			//데이터 삭제 
+			tx.begin();
+			Dept one = em.find(Dept.class, 1);
+			if(one != null) {
+				em.remove(one);				
+			}
+			tx.commit();
 ````
 
