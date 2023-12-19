@@ -246,6 +246,7 @@ public class Step03RunTest {
 ----
 
 4. 팀의 관점에서 회원 다 대 일
+   : 무한 순한 문제 ToString 주석으로 해결 or ToString 재정의, 단 방향에서 양방향으로 객체 관리할 수 있게 만듬. 
 
 ```JAVA
 @NoArgsConstructor
