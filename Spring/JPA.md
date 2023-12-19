@@ -2,18 +2,24 @@
 
 ### JPA(Java Persistence API)
 
+: 자바 진영의 ORM 기술 표준으로 SQL을 직접 다루지 않고 자바 클래스와 DB Table 매핑
+
 특징 
 
 + JAVA ORM 기술 표준 명세로 JAVA에서 제공하는 API
 + JAVA 어플리케이션에서 관계형 데이터 베이스를 사용하는 방식을 정의한 인터페이스 
 + ORM은 자바 클래스와 DB 테이블을 매핑
-+ JPA를 사용하기 위해서는 Hibernate, EclipseLink, DataNucleus와 같은 ORM 프레임 워크를 사용해야함 
++ JPA를 사용하기 위해서는 Hibernate, EclipseLink, DataNucleus와 같은 ORM 프레임 워크를 사용해야함
++ DDL은 설정 시 제공하고 DML은 메소드로 제공
++ 각 DB들의 방언을 제공
 
 Repository 클래스에 JPA를 주입해서 Hibernate로 사용하고 Hibernate가 JDBC API 통해 DB와 소통합니다. 
 
-#### ORM
+----
 
-: 객체와 DB 테이블을 매핑시켜주는 것을 의미합니다. ORM을 사용하면 SQL Query가 아닌 java 코드로 데이터를 조작할 수 있습니다. 
+#### ORM(Object Relational Mapping)
+
+: 객체와 DB 테이블을 매핑시켜주는 것을 의미합니다. ORM을 사용하면 SQL Query가 아닌 java 코드로 데이터를 조작할 수 있습니다. 객체를 조작할 때, SQL 쿼리가 아닌 메소드로 조작하고 객체의 관계를 바탕으로 SQL 문장을 자동 생성해서 조작합니다.
 
 
 JPA 동작 과정
@@ -22,12 +28,14 @@ JPA 동작 과정
 
   JPA 내부에 Hibernate를 사용해서 JPA를 구현합니다.
 
-<br>
+----
 
 #### Hibernate
 
 : JPA 구현체의 한 종류로 JPA는 DB와 자바 객체를 매핑하기 위한 API를 제공하고 JPA 구현체를 구현한 것입니다.
   Hibernate 내부에 JDBC API가 동작하고 있기 때문에 DB와 소통할 수 있습니다. HQL이라는 Hibernate Query Language을 사용해서 SQL의 문장을 객체로 반환해줍니다. 
+
+---
 
 #### 영속성
 
@@ -40,11 +48,22 @@ JPA 동작 과정
   + 비즈니스 논리 계층: 도메인 
   + 데이터 접근 계층: 영속 계층
 
+<BR>
+
 JPA에서 객체를 관리하는 방법
 
 : JPA 실행되면 엔티티 매니저 팩토리에서 엔티티 매니저을 통해 객체를 관리합니다. 엔티티 매니저가 활성화된 상태에서 트랜잭션안에서 DB에서 데이터를 가져오면 영속 상태가 됩니다. 영속 상태로 된 객체는 JPA에서 계속 관리합니다.  
 
-<br>
+
+JPA에서 객체를 저장하는 방법
+
+: JPA 내부에는 캐시 메모리가 존재하고 객체를 저장합니다. 모든 쿼리를 캐시 메모리에 우선 저장하고 커밋 명령이 내려올 때 DB에 반영하는 방식입니다.  
+
+JPA 객체 조회 방식
+
+: DB를 먼저 조회하는 것이 아닌 캐시 메모리를 조회후, 존재하면 반환하고 존재하지 않으면 DB 쿼리로 조회 후 반환합니다. 
+
+----
 
 영속 종류
 
