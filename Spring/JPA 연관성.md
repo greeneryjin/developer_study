@@ -151,6 +151,11 @@ public class Team2 {
 @ToString
 @RequiredArgsConstructor //id를 제외한 생성자 생성
 
+//name: entity에서 시퀀스 기능 선언 및 이름
+//sequenceName: oracle 테이블 내에 생성될 이름
+//allocationSize: DB로 부터 INSERT 할 때마다 시퀀스 부여, 50개가 default고 인 메모리에 저장하고 추후에 쿼리를 보냄
+//initialValue: 1씩 증가
+
 @SequenceGenerator(name = "member3_seq", sequenceName = "member3_seq_id", allocationSize = 50, initialValue = 1)
 @Entity
 public class Member3 {
