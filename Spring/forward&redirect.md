@@ -55,7 +55,7 @@ public class ServletTwo extends HttpServlet {
 
 client -> html -> /one -> /one
 
-내부적으로 페이지를 이동해주고 보여줌 
+내부적으로 페이지를 이동해주고 client에게 보여줌 
 
 
 #### redirect 
@@ -114,4 +114,4 @@ public class ServletTwo extends HttpServlet {
 
 client -> html -> /one -> /two
 
-내부적으로 페이지를 생성해주고 보여줌 
+내부적으로 페이지를 생성해주고 client에게 다시 전송 
