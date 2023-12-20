@@ -130,7 +130,7 @@
 #### 12. InfraSetting
   - [Mysql 설치](https://github.com/greeneryjin/developer_study/blob/main/Infra/Mysql.md)
   - JAVA 설치
-  - [Docker 설치](https://github.com/greeneryjin/developer_study/blob/main/InfraSetting/Mysql%EC%84%A4%EC%B9%98.md)(https://github.com/greeneryjin/developer_study/blob/main/InfraSetting/docker%EC%84%A4%EC%B9%98.md)
+  - [Docker 설치](https://github.com/greeneryjin/developer_study/blob/main/InfraSetting/docker%EC%84%A4%EC%B9%98.md)
   - [Oracle](https://github.com/greeneryjin/developer_study/blob/main/InfraSetting/Oracle.md)
   - [DB Connection](https://github.com/greeneryjin/developer_study/blob/main/InfraSetting/DBConnection.md)
   - [Eclipse](https://github.com/greeneryjin/developer_study/blob/main/InfraSetting/eclipse.md)
