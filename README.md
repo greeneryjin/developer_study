@@ -57,10 +57,10 @@
 
 #### 2. Spring
   - [JPA](https://github.com/greeneryjin/developer_study/blob/main/JPA/JPA.MD)
-  - Querydsl
+  - [JPA 연관성](https://github.com/greeneryjin/developer_study/blob/main/Spring/JPA%20%EC%97%B0%EA%B4%80%EC%84%B1.md)
+  - [Sevlet](https://github.com/greeneryjin/developer_study/blob/main/Spring/Servlet.md)
+  - [ModelMapper](https://github.com/greeneryjin/developer_study/blob/main/Spring/ModelMapper.md)
   - Spring MVC
-  - Spring Security
-  - 이론
   - ControllerAdivce
   - Profile
   - Aop
@@ -130,11 +130,12 @@
 #### 12. InfraSetting
   - [Mysql 설치](https://github.com/greeneryjin/developer_study/blob/main/Infra/Mysql.md)
   - JAVA 설치
-  - [Docker 설치](https://github.com/greeneryjin/developer_study/blob/main/InfraSetting/docker%EC%84%A4%EC%B9%98.md)
+  - [Docker 설치](https://github.com/greeneryjin/developer_study/blob/main/InfraSetting/Mysql%EC%84%A4%EC%B9%98.md)(https://github.com/greeneryjin/developer_study/blob/main/InfraSetting/docker%EC%84%A4%EC%B9%98.md)
   - [Oracle](https://github.com/greeneryjin/developer_study/blob/main/InfraSetting/Oracle.md)
   - [DB Connection](https://github.com/greeneryjin/developer_study/blob/main/InfraSetting/DBConnection.md)
-  - [eclipse](https://github.com/greeneryjin/developer_study/blob/main/InfraSetting/eclipse.md)
+  - [Eclipse](https://github.com/greeneryjin/developer_study/blob/main/InfraSetting/eclipse.md)
+  - [Eclipse&jpa 연동](https://github.com/greeneryjin/developer_study/blob/main/InfraSetting/eclipseJPA.md)
 
 #### 13. Infra 
-  - [Docker](https://github.com/greeneryjin/developer_study/blob/main/Infra/Ddocker.md)
+  - [Docker 개념](https://github.com/greeneryjin/developer_study/blob/main/Infra/Ddocker.md)
   - [Docker 명령어](https://github.com/greeneryjin/developer_study/blob/main/Infra/Docker%20%EB%AA%85%EB%A0%B9%EC%96%B4.md)
