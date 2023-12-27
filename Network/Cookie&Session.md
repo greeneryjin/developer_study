@@ -33,3 +33,26 @@
 6. client 데이터 요청 + 쿠키: client -> 웹 서버
 7. 웹서버에서 응답 후 전달: 웹서버 -> client
 
+세션 생성
+
+```java
+      HttpSession session = request.getSession(); 
+			System.out.println(session.getId()); 
+			//세션 객체에 데이터 저장
+			session.setAttribute("name", "연아");
+			session.setAttribute("age", 10);
+```
+
+쿠키 생성
+
+			//쿠키 객체 생성
+			Cookie name = new Cookie("name", "재석");
+			Cookie age = new Cookie("age", "40");
+			
+			//client 시스템에 잔존 시간 설정(1년, 60*60*24*365)
+			name.setMaxAge(60*60*24*365);
+			age.setMaxAge(60*60*24);
+			
+			//client 시스템에 몰래 저장(응답객체 통해서 저장)
+			response.addCookie(name);
+			response.addCookie(age);
