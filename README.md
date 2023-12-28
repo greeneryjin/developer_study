@@ -117,15 +117,17 @@
   - Swagger
   - ModelMapper
   - Slf4j
+  - Jackson
 
 
 #### 11. Web
   - Session & Cookie & localStorage
-  - [화면 랜더링]()
+  - 화면 랜더링
   - 웹서비 & WAS
   - Nginx & Apache
   - HTTP
   - 브라우저 동작 방식
+  - Content-Type
 
 #### 12. InfraSetting
   - [Mysql 설치](https://github.com/greeneryjin/developer_study/blob/main/Infra/Mysql.md)
