@@ -9,7 +9,10 @@
 9. 라이브러리 추가
 
 src/main/java -> 자바 폴더
-src/main/resources -> 설정 파일 및 HTML 파일 
+
+src/main/resources -> 설정 파일 및 HTML 파일
+
 static -> HMTL/CSS 폴더 모음
+
 templates -> 타임리프, jsp 설정 파일
 
