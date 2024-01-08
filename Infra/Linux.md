@@ -81,6 +81,19 @@ ip확인 명령어
   mv <옵션> 원본파일명 새이름
   -i : 이름 변경시 overwrite할 것인지
   -f : 변경시 overwrite 질문없이 무조건 덮어쓰기
+.
+└── cloud
+    └── byr.txt
+
+/home으로 복사하기
+$ cp cloud/byr.txt ./byr2.txt
+
+.
+├── byr2.txt
+└── cloud
+    └── byr.txt
+
+
 ```
 
 6. 파일목록 보기
@@ -96,7 +109,8 @@ ip확인 명령어
 7. 파일 생성
 
    ```
-    touch 파일.파일 확장자
+    touch 이름.파일 확장자
+    ex) touch 이름.txt
    ```
 
 
