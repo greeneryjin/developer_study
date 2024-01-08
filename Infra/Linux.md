@@ -117,11 +117,68 @@ $ cp cloud/byr.txt ./byr2.txt
 리눅스 폴더 구조
 ![다운로드](https://github.com/greeneryjin/developer_study/assets/87289562/fb9c8a5d-3f5c-4a3c-aacb-d1c49ed67abd)
 
+/ 
+: 최상의 디렉토리, 시스템 운영
+
+/bin
+: 바이너리 및 기타 실행 프로그램을 찾을 수 있는 곳, 기본적인 명령어가 저장되어 있음, mv, cp, rm등이 존재, 명령어 디렉토리, 시스템 운영
+
+/sbin
+시스템 운영 및 관리에 관한 명령어들 보유 디렉토리
+
+계정관리, 디스크 관리등 관리하는 명령어들 보유
+
+대부분 root 사용자 전용 명령어
+
+권한 부여받은 일반 user도 sudo 명령어로 사용 가능
+
+시스템 운영
+
+
+/usr
+ 일반 사용자들이 사용 가능한 명령어 파일들이 존재
+파일 시스템의 주요 구성, 사용자가 실행할 프로그램들이 저장, read_only 데이터만 존재
+/usr/bin과 동일
+시스템 운영
+/etc
+시스템 설정 파일 보유
+사용자 user들의 정보(passwd),  hostname, web server config(httpd.conf)등을 linux의 text 파일인 ASCII text 파일 형식으로 구성(내용을 알아볼수 있는 text 구조)
+ 
+ubuntu@ubuntu:/etc$ cat hostname
+시스템 운영
+/var
+가변 데이터 보유 영역, 로그 파일등
+많은 애플리케이션 데이터들 저장 폴더
+용량 부족시 부팅이 안 될수도 있음
+시스템 운영
+/tmp
+일반적으로 재부팅시 지워지는 임시 파일들이 저장된 공간
+시스템 운영
+/proc
+메모리에서 동작중인 프로세스 정보를 확인
+
+ubuntu@ubuntu:/var$ cd /proc
+ubuntu@ubuntu:/proc$ ls
+리눅스의 메모리 정보, HW 정보
+/sys
+시스템 HW정보나 가상 파일 시스템들 
+리눅스의 메모리 정보, HW 정보
+/root
+최상위 사용자, root의 home 디렉토리
+/home
+일반 사용자 홈 디렉토리
+useradd 명령어로 새로운 사용자를 생성하면 대부분 사용자의 ID와 동일한 이름의 디렉토리가 자동으로 생성됨
+/dev
+하드웨어 장치 파일(디바이스 디렉토리)
+리눅스는 모든것을 파일이라는 포인터 파일로 관리
+현 리눅스 시스템이 인식한 파일들 목록(디바이스파일)
+예 : ubuntu 이미지 보유
+
 
 ### 트리 구조로 확인하기
 
     $tree
-    없으면 설치 sudo apt  install tree 
+    없으면 설치 sudo apt install tree 
 
 심볼릭 링크도 tree로 확인 가능 
 
@@ -188,4 +245,30 @@ x: 파일에 대한 실행 권한
     ls -F -al / 
     lrwxrwxrwx   1 root root     7 Aug 10 00:17 bin -> usr/bin/
 
+    연결된 파일이 삭제돼도 심볼릭 링크된 파일은 삭제되지 않음  
 
+
+패키지 설치 명령어
+
+    apt-get
+
+    설치한 패키지 리스트 확인
+    cat /etc/apt/sources.list
+
+파일 수정 
+
+- i: 입력 모드로 변경
+
+- x: 커서 위치의 문자를 삭제(명령모드, Esc)
+
+- dd: 커서 위치의 한 줄을 삭제(명령모드, Esc)
+
+- u: 마지막으로 수행한 명령을 취소(명령모드, Esc)
+  
+- :w : 현재 파일을 저장(명령모드, Esc)
+  
+- :e! : 편집취소
+
+- :q : vi 를 종료
+
+- :q!: 저장하지 않고 vi를 종료
