@@ -1,5 +1,5 @@
 
-OS 정보 확인 명령어 
+### OS 정보 확인 명령어 
 
 ```
   # 1. 시스템의 전체적인 정보, 커널 버전, 운영 체제 종류, 호스트 이름, 하드웨어 아키텍처 등을 표시
@@ -20,7 +20,7 @@ OS 정보 확인 명령어
   $cat /etc/issue
 ```
 
-외부에서 접속을 위한 설정 및 확인
+### 외부에서 접속을 위한 설정 및 확인
 
 ```
 ip확인 명령어
@@ -35,11 +35,11 @@ ip확인 명령어
         : ip확인 후 virtual vox의 설정에서 host와 guest ip 매핑
 ```
 
-시작과 종료 명령어
+### 시작과 종료 명령어
 
     shutdown -P now
 
-기본 명령어
+### 기본 명령어
 
 1. 디렉토리 생성
 
@@ -118,9 +118,22 @@ $ cp cloud/byr.txt ./byr2.txt
 ![다운로드](https://github.com/greeneryjin/developer_study/assets/87289562/fb9c8a5d-3f5c-4a3c-aacb-d1c49ed67abd)
 
 
+### 트리 구조로 확인하기
 
+    $tree
+    없으면 설치 sudo apt  install tree 
 
-파일 이동 
+심볼릭 링크도 tree로 확인 가능 
+
+```
+.
+├── byr2.txt
+├── cloud
+│   └── byr.txt
+└── f.txt -> byr2.txt
+```
+
+### 파일 이동 
 
 1. 절대 경로
 
@@ -131,7 +144,7 @@ $ cp cloud/byr.txt ./byr2.txt
   : 현재 내가 위치한 경로를 기준으로 디렉토리 이동 ./ 
 
 
-리눅스 필드 설명
+### 리눅스 필드 설명
 
 1. d: 디렉토리
 
@@ -156,9 +169,23 @@ w: 파일에 대한 쓰기 권한 (파일 삭제 및 파일이름 변경)
 x: 파일에 대한 실행 권한
 
 
-복사 붙이기
+### 복사 붙이기
 
-  블록 잡고 shift + insert
-  
+    블록 잡고 shift + insert
+
+
+### 심볼릭 링크 -> 즐겨찾기 추가와 같은 기능 
+
+    ln -s 파일명
+
+    확인 명령어
+    ls -F
+
+    심볼릭 링크 확인 명령어
+    ls -F -al
+    lrwxrwxrwx 1 username username    8 Jan  8 06:30 f.txt -> byr2.txt
+
+    ls -F -al / 
+    lrwxrwxrwx   1 root root     7 Aug 10 00:17 bin -> usr/bin/
 
 
