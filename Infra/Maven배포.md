@@ -38,13 +38,6 @@ project -> 오른쪽 버튼 -> Run as -> maven build
 
 4. 포트번호 변경
 
-#### ubuntu내에 설치되는 tomcat의 앱 서비스 port
-
-![image](https://github.com/greeneryjin/developer_study/assets/87289562/563086d8-4ea0-45fd-8498-e92bd3fbb4ad)
-url: jdbc:mysql://127.0.0.1:3306/fisa?
-127.0.0.1:9911 -> 10.0.2.15:80 으로 포트포워딩이 됩니다. 
-
----
 
 #### java 파일의 파일의 인코딩 문제
 		
