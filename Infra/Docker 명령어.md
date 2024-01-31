@@ -63,6 +63,10 @@ docker 이미지 히스토리
 
     docker history 이미지
 
-    
+docker registory에 push/pull
+
+    docker tag tag이름  도커허브이름/컨테이너이름
+    docker push 도커허브이름/컨테이너이름
+    docker pull 도커허브이름/컨테이너이름
 
     
