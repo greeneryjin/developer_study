@@ -24,6 +24,10 @@
 컨테이너 로그 확인
 
     docker logs (—tail)
+    $docker logs <container_id>
+    $docker logs -f <container_id>
+    -f option : follow output, 백그라운드로 실행된 컨테이너의 로그 확인
+    종료 : <CTRL>+<C>
 
 docker image 목록
 
