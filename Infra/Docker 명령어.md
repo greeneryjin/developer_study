@@ -1,4 +1,7 @@
+docker run
 
+    //백그라운드 실행, 이름 지정, 포트 지정 
+    docker run --name 이름 -d -p 8080:8080 컨테이너ID
 
 네트워크 조회
 
@@ -52,5 +55,14 @@ docker-compose로 컨테이너 종료
 
     docker volume prune
 
+지금까지 작성한 명령어 
+
+    history
+
+docker 이미지 히스토리 
+
+    docker history 이미지
+
+    
 
     
