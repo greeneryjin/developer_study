@@ -65,8 +65,11 @@ docker 이미지 히스토리
 
 docker registory에 push/pull
 
-    docker tag tag이름  도커허브이름/컨테이너이름
+    docker tag tag이름 도커허브이름/컨테이너이름
     docker push 도커허브이름/컨테이너이름
     docker pull 도커허브이름/컨테이너이름
 
-    
+docker image registory에 push/pull
+
+    docker tag 이미지명 도커허브이름/컨테이너이름
+    docker push 도커허브이름/컨테이너이름
