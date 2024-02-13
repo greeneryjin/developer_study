@@ -49,7 +49,12 @@ docker-compose로 컨테이너 종료
     docker stop $(docker ps -a -p)
     docker rm $(docker ps -a -p)
     docker rmi $(docker images -q)
-    sudo rm -rf: 호스트 명령으로 삭제하고 하위 폴더까지 포함    
+    sudo rm -rf: 호스트 명령으로 삭제하고 하위 폴더까지 포함   
+
+
+    //어드민이 아닐 경우
+    sudo docker stop $(sudo docker ps -aq)
+    sudo docker rm -f $(sudo docker ps -aq)
 
 사용하지 않는 도커 볼륨 삭제
 
