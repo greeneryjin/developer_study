@@ -78,3 +78,21 @@ docker image registory에 push/pull
 
     docker tag 이미지명 도커허브이름/컨테이너이름
     docker push 도커허브이름/컨테이너이름
+
+docker 게스트 os에서 확인하기(컨테이너 접속 X)
+
+    docker exec <container_id> sh -c  ‘명령어’
+    ex) docker exec 5d22d12b0c93 sh -c 'cat /usr/share/nginx/html/index.html' nginx index파일
+
+호스트에서 컨테이너로 파일 복사
+
+    docker cp hostmakefile.txt 컨테이너id: 카피 경로
+
+호스트에서 편집한 문서 docker와 동기화하기
+
+    mount: 호스트의 파일 시스템 경로를 컨테이너 내부에 연결하는 것을 의미로 호스트 머신의 디렉토리나 파일을 도커 컨테이너 내부에서 사용하거나 읽을 수 있게 됩니다.
+
+    volume: 볼륨은 도커 컨테이너에서 데이터를 저장하고 공유하기 위한 디렉터리 또는 파일로 컨테이너가 삭제가 되더라도 데이터를 유지할 수 있게 만드는 것입니다. 
+    
+    
+    
