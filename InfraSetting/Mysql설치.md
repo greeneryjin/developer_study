@@ -1,3 +1,4 @@
+ sudo apt update
 
 1. mysql - server 설치
 
