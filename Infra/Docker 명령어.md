@@ -95,4 +95,16 @@ docker 게스트 os에서 확인하기(컨테이너 접속 X)
     volume: 볼륨은 도커 컨테이너에서 데이터를 저장하고 공유하기 위한 디렉터리 또는 파일로 컨테이너가 삭제가 되더라도 데이터를 유지할 수 있게 만드는 것입니다. 
     
     
-    
+도커 컴포우즈
+
+    sudo curl -SL https://github.com/docker/compose/releases/download/v2.24.5/docker-compose-     linux-x86_64 -o /usr/local/bin/docker-compose
+
+도커 컴포우즈 버전
+
+    docker -compose --version   
+
+
+도커 컴포우즈 권한
+
+    sudo chmod +x /usr/local/bin/docker-compose
+
