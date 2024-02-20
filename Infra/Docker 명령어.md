@@ -108,3 +108,17 @@ docker 게스트 os에서 확인하기(컨테이너 접속 X)
 
     sudo chmod +x /usr/local/bin/docker-compose
 
+도커 사용하지 않는 오브젝트 삭제
+
+    이미지
+    docker image prune
+
+    컨테이너 
+    docker container prune
+
+    볼륨
+    docker volumn prune
+
+    네트워크
+    docker network prune
+
